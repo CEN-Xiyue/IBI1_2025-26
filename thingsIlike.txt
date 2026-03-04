@@ -1,3 +1,4 @@
+HEAD
 I like pigs.
 I like chocolate.
 I like taking breaks.
@@ -9,3 +10,15 @@ I like to be a baby.
 I like sunny days.
 I like sports.
 I like to quit school.
+I like tea
+I like chocolate biscuits
+I like snow
+I like reading
+I don't like hiking
+I like coding
+I like pizza
+I like music
+I like dogs
+I like pizza hut
+I like ziweichaoshou
+I like chongqing noodles
