@@ -1,0 +1,3 @@
+In practical 3, I learnt how to start using Git and Github, and use VS code to manage my files. 
+But I find the directions difficult. 
+Hope I can get more used to it.
