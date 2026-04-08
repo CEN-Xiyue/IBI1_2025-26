@@ -38,7 +38,7 @@ class food_item:
 
    
 # 1
-    daily_food_1 = [apple, banana, pizza]
+    daily_food_1 = [apple, banana, ziweidumplings]
     cal_daily(daily_food_1, student = "Student A" )
 
 #2

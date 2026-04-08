@@ -27,7 +27,7 @@ def cal_mass(seq):
     for a in seq:
         if a not in AA:
             print("Error,",a,"can't be found") # reports error if AA can't be found
-            return None
+            return False
         total_mass = total_mass + AA[a]
     print(f"The total mass of sequence '{seq}' is {total_mass}")
     return total_mass
