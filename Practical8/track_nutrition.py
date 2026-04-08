@@ -19,13 +19,15 @@ def cal_daily(total_food, student = 'Student'):
         carbohydrate_mass += item.carbohydrate
         fat_mass += item.fat
     print(f"----The nutrient report of {student}----")
-    print(f"The total calories consumed over 24h:{calories_mass}cal ")
-    print(f"The total protein consumed over 24h:{protein_mass}g ")
-    print(f"The total carbohydrate consumed over 24h:{carbohydrate_mass}g ")
-    print(f"The total fat consumed over 24h:{fat_mass}g ")
+    print(f"The total calories consumed over 24h: {calories_mass}cal ")
+    print(f"The total protein consumed over 24h: {protein_mass}g ")
+    print(f"The total carbohydrate consumed over 24h: {carbohydrate_mass}g ")
+    print(f"The total fat consumed over 24h: {fat_mass}g ")
 # warning if cal>2500 or fat>90
-    if calories_mass>2500 or fat_mass>90:
-        print(f"Waring! Pay attention to your diet! Too unhealthy!! ")
+    if calories_mass>2500:
+        print(f"Warning! Calorie intake > 2500 cal, pay attention to your diet! Too unhealthy!! ")
+    if fat_mass>90:
+        print(f"Warning! Total fat intake > 90 g, pay attention to your diet! Too unhealthy!! ")
     return calories_mass, protein_mass, carbohydrate_mass,fat_mass
 
 #example
@@ -37,10 +39,10 @@ class food_item:
     heytea = food_item("Heytea", 520, 30, 40, 30)
 
    
-# 1
-    daily_food_1 = [apple, banana, ziweidumplings]
+# Example 1
+    daily_food_1 = [apple, banana, pizza]
     cal_daily(daily_food_1, student = "Student A" )
 
-#2
+# Example 2
     daily_food_2 = [ziweidumplings, heytea]
     cal_daily(daily_food_2, student = 'Student B')
