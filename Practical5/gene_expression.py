@@ -14,6 +14,7 @@ ind = np.arange(N)
 width = 0.4
 pl = plt.bar(ind,gene_expression, width)
 plt.ylabel('gene expression level')
+plt.xlabel('gene name')
 plt.title('	expression values of several genes measured in a biological	sample')
 plt.xticks(ind, gene_names)
 plt.show()

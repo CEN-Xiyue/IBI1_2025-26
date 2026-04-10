@@ -27,6 +27,7 @@ ind = np.arange(N)
 width = 0.4
 pl = plt.bar(ind,growthrate, width)
 plt.ylabel('Growth rate')
+plt.xlabel('Country name')
 plt.title('	Population growth rate of several countries from 2020-2024')
 plt.xticks(ind, country_names)
 plt.show()
