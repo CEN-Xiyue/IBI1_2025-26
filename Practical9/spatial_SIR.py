@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
 population = np.zeros((100,100))
 outbreak = np.random.choice(range(100),2)
 population[outbreak[0],outbreak[1]] = 1
@@ -48,5 +49,10 @@ for _ in range(times):
 plt.figure(figsize=(6, 4), dpi=150)
 plt.imshow(population, cmap='viridis', interpolation='nearest')
 plt.title(f'2D Spatial SIR after {times} steps\nBeta=0.3, Gamma=0.05')
-plt.axis('off')
-plt.show(block=True)
+plt.xlabel('X Coordinate')  
+plt.ylabel('Y Coordinate')  
+plt.xticks([0, 25, 50, 75, 100])  
+plt.yticks([0, 25, 50, 75, 100])
+
+
+plt.show()

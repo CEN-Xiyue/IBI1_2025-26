@@ -1,4 +1,4 @@
-# create a list to store information
+# create a dictionary to store information
 AA = {
     'G': 57.02,
     'A': 71.04,
