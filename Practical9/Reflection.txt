@@ -1,0 +1,3 @@
+The practical was overall very difficult, espeically when creating plots for SIR_vaccination, where I often made mistakes in saving the data, appending the new calculated infected number, leading to a flat line in the final graph.
+The easy part was in task SIR.py, where I calculated the number of recovery, infected and susceptible, because the logic was quite straightforward.
+I like the logic of "if random.random() < p" to define the occurence of an event. This is the first time I used statistical math knowledge into python which was very exciting.
