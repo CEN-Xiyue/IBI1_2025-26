@@ -1,0 +1,7 @@
+Question: What is the distribution of DALYs across countries in 2019?
+Line Number: Line 43-54
+Discussion: 
+    The DALYs varies across countries.
+    The graph is organized where from left to right, DALYs values increases.
+    Their are two observational high outlier DALYs values. The corresponding countries might suffer from the highest disease burden.
+    This graph can give us an overview of global health inequality.
