@@ -23,10 +23,10 @@ for line in input:
                         stopcodon.append(codon)
 
             if len(stopcodon) > 0:
-                line1 = gene_name + "," + " ".join(stopcodon) + "\n"
+                line1 = ">" + gene_name + "_mRNA, " + " ".join(stopcodon) + "\n"
                 stop_genes.write(line1)
                 stop_genes.write(current_seq + "\n")
-                print(line1.strip())
+                
 
         if "gene:" in line:
             gene_name = line.split("gene:")[1].split()[0]
@@ -47,10 +47,10 @@ if current_seq != "":
                 stopcodon.append(codon)
 
     if len(stopcodon) > 0:
-        line1 = gene_name + "," + " ".join(stopcodon) + "\n"
+        line1 = ">" + gene_name + "_mRNA, " + " ".join(stopcodon) + "\n"
         stop_genes.write(line1)
         stop_genes.write(current_seq + "\n")
-        print(line1.strip())
+        
 
 input.close()
 stop_genes.close()
