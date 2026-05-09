@@ -13,12 +13,16 @@ def cal_daily(total_food, student = 'Student'):
     protein_mass = 0.0
     carbohydrate_mass = 0.0
     fat_mass = 0.0
+ 
     for item in total_food:
         calories_mass += item.calories
         protein_mass += item.protein
         carbohydrate_mass += item.carbohydrate
         fat_mass += item.fat
+
+    food_names = [item.food for item in total_food]
     print(f"----The nutrient report of {student}----")
+    print(f"---Daily food: {', '.join(food_names)} ---")
     print(f"The total calories consumed over 24h: {calories_mass}cal ")
     print(f"The total protein consumed over 24h: {protein_mass}g ")
     print(f"The total carbohydrate consumed over 24h: {carbohydrate_mass}g ")
@@ -31,18 +35,15 @@ def cal_daily(total_food, student = 'Student'):
     return calories_mass, protein_mass, carbohydrate_mass,fat_mass
 
 #example
-class food_item:
-    apple = food_item("Apple", 60, 0.3, 15, 0.5)
-    banana = food_item("Banana", 105, 1.3, 27, 0.4)
-    ziweidumplings = food_item("ziweidumplings", 165, 31, 0, 66)
-    pizza = food_item("Pizza", 285, 12, 36, 10)
-    heytea = food_item("Heytea", 520, 30, 40, 30)
+apple = food_item("Apple", 60, 0.3, 15, 0.5)
+banana = food_item("Banana", 105, 1.3, 27, 0.4)
+ziweidumplings = food_item("ziweidumplings", 165, 31, 0, 66)
+pizza = food_item("Pizza", 285, 12, 36, 10)
+heytea = food_item("Heytea", 520, 30, 40, 30)
 
-   
-# Example 1
-    daily_food_1 = [apple, banana, pizza]
-    cal_daily(daily_food_1, student = "Student A" )
-
-# Example 2
-    daily_food_2 = [ziweidumplings, heytea]
-    cal_daily(daily_food_2, student = 'Student B')
+# 1
+daily_food_1 = [apple, banana, pizza]
+cal_daily(daily_food_1, student="Student A")
+# 2
+daily_food_2 = [ziweidumplings, heytea]
+cal_daily(daily_food_2, student="Student B")
