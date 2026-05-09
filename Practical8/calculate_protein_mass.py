@@ -31,7 +31,5 @@ def cal_mass(seq):
         total_mass = total_mass + AA[a]
     print(f"The total mass of sequence '{seq}' is {total_mass}")
     return total_mass
-# include an example
-cal_mass('GGGGGG') 
-cal_mass('GGGX')
-
+# ask user to input an AA sequence
+cal_mass(input("Please input a protein sequence:"))
