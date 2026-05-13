@@ -1,0 +1,10 @@
+1. The length of DLX5_HUMAN is 289 and the subcellular localisation is the nucleus.
+
+2. The range of percentage identities in the reported online BLAST results: 52.3%-100.0&
+
+3. The alignment score and percentage of identical amino acids (Similarity):
+Human and mouse：alignment score = 1490.0, Similarity = 96.5%
+Human and random: alignment score = -1242.0, Similarity = 37.7%
+Mouse and random: alignment score = -1237.0, Similarity = 33.2%
+
+4. The sequence of Human DLX5 and mouse DLX5 are most closely related.
